@@ -22,7 +22,7 @@ pod "YZAnalytics"
 
 ## Author
 
-Yeah, yeahkyo@163.com
+Yeah, zyeah61@gmail.com
 
 ## License
 

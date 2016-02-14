@@ -1,0 +1,14 @@
+PODS:
+  - YZAnalytics (0.1.0)
+
+DEPENDENCIES:
+  - YZAnalytics (from `../`)
+
+EXTERNAL SOURCES:
+  YZAnalytics:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  YZAnalytics: ae11620f8e58caa605288a2b431bad2150f8e573
+
+COCOAPODS: 0.39.0

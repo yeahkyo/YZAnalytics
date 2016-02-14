@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = "YZAnalytics"
   s.version          = "0.1.0"
-  s.summary          = "A short description of YZAnalytics."
+  s.summary          = "Client-side analytics tool."
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -17,14 +17,18 @@ Pod::Spec.new do |s|
 #   * Write the description between the DESC delimiters below.
 #   * Finally, don't worry about the indent, CocoaPods strips it!  
   s.description      = <<-DESC
+   * Think: What does it do? Why did you write it? What is the focus?
+   * Try to keep it short, snappy and to the point.
+   * Write the description between the DESC delimiters below.
+   * Finally, don't worry about the indent, CocoaPods strips it!
                        DESC
 
-  s.homepage         = "https://github.com/<GITHUB_USERNAME>/YZAnalytics"
+  s.homepage         = "https://github.com/yeahkyo/YZAnalytics"
   # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
   s.license          = 'MIT'
-  s.author           = { "Yeah" => "yeahkyo@163.com" }
-  s.source           = { :git => "https://github.com/<GITHUB_USERNAME>/YZAnalytics.git", :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  s.author           = { "Yeah" => "zyeah61@gmail.com" }
+  s.source           = { :git => "https://github.com/yeahkyo/YZAnalytics.git", :tag => s.version.to_s }
+  # s.social_media_url = 'https://twitter.com/yeah'
 
   s.platform     = :ios, '7.0'
   s.requires_arc = true
@@ -35,6 +39,4 @@ Pod::Spec.new do |s|
   }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
 end

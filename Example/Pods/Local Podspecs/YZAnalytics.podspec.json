@@ -1,0 +1,25 @@
+{
+  "name": "YZAnalytics",
+  "version": "0.1.0",
+  "summary": "A short description of YZAnalytics.",
+  "description": "",
+  "homepage": "https://github.com/<GITHUB_USERNAME>/YZAnalytics",
+  "license": "MIT",
+  "authors": {
+    "Yeah": "yeahkyo@163.com"
+  },
+  "source": {
+    "git": "https://github.com/<GITHUB_USERNAME>/YZAnalytics.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "7.0"
+  },
+  "requires_arc": true,
+  "source_files": "Pod/Classes/**/*",
+  "resource_bundles": {
+    "YZAnalytics": [
+      "Pod/Assets/*.png"
+    ]
+  }
+}

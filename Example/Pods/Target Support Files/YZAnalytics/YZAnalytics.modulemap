@@ -1,0 +1,6 @@
+framework module YZAnalytics {
+  umbrella header "YZAnalytics-umbrella.h"
+
+  export *
+  module * { export * }
+}
