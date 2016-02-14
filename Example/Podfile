@@ -1,0 +1,12 @@
+source 'https://github.com/CocoaPods/Specs.git'
+use_frameworks!
+
+target 'YZAnalytics_Example', :exclusive => true do
+  pod 'YZAnalytics', :path => '../'
+end
+
+target 'YZAnalytics_Tests', :exclusive => true do
+  pod 'YZAnalytics', :path => '../'
+
+  
+end
