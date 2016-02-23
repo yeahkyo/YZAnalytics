@@ -7,42 +7,32 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		04BCF0DEE0E420D508491922852985F1 /* YZAnalytics-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A1BF8A82031F5B39A09D2741FB3CC121 /* YZAnalytics-dummy.m */; };
 		054AD08746A98D4B4321ABA4AB8E4C15 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
 		39A26D36E794BAF5AC5D45B053B92B28 /* Pods-YZAnalytics_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C03B2DCC342A628E9E542C9CA66ACC67 /* Pods-YZAnalytics_Example-dummy.m */; };
-		47359BB01C70CA5600CB08F9 /* analyticslocal.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 47359BA61C70CA5600CB08F9 /* analyticslocal.xcdatamodeld */; };
-		47359BB11C70CA5600CB08F9 /* analyticslocal.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 47359BA61C70CA5600CB08F9 /* analyticslocal.xcdatamodeld */; };
-		47359BB21C70CA5600CB08F9 /* analyticslocal.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 47359BA61C70CA5600CB08F9 /* analyticslocal.xcdatamodeld */; };
-		47359BB31C70CA5600CB08F9 /* YZAnalytics.h in Headers */ = {isa = PBXBuildFile; fileRef = 47359BA81C70CA5600CB08F9 /* YZAnalytics.h */; };
-		47359BB41C70CA5600CB08F9 /* YZAnalytics.h in Headers */ = {isa = PBXBuildFile; fileRef = 47359BA81C70CA5600CB08F9 /* YZAnalytics.h */; };
-		47359BB51C70CA5600CB08F9 /* YZAnalytics.h in Headers */ = {isa = PBXBuildFile; fileRef = 47359BA81C70CA5600CB08F9 /* YZAnalytics.h */; };
-		47359BB61C70CA5600CB08F9 /* YZAnalytics.m in Sources */ = {isa = PBXBuildFile; fileRef = 47359BA91C70CA5600CB08F9 /* YZAnalytics.m */; };
-		47359BB71C70CA5600CB08F9 /* YZAnalytics.m in Sources */ = {isa = PBXBuildFile; fileRef = 47359BA91C70CA5600CB08F9 /* YZAnalytics.m */; };
-		47359BB81C70CA5600CB08F9 /* YZAnalytics.m in Sources */ = {isa = PBXBuildFile; fileRef = 47359BA91C70CA5600CB08F9 /* YZAnalytics.m */; };
-		47359BB91C70CA5600CB08F9 /* YZAnalyticsConnection.h in Headers */ = {isa = PBXBuildFile; fileRef = 47359BAA1C70CA5600CB08F9 /* YZAnalyticsConnection.h */; };
-		47359BBA1C70CA5600CB08F9 /* YZAnalyticsConnection.h in Headers */ = {isa = PBXBuildFile; fileRef = 47359BAA1C70CA5600CB08F9 /* YZAnalyticsConnection.h */; };
-		47359BBB1C70CA5600CB08F9 /* YZAnalyticsConnection.h in Headers */ = {isa = PBXBuildFile; fileRef = 47359BAA1C70CA5600CB08F9 /* YZAnalyticsConnection.h */; };
-		47359BBC1C70CA5600CB08F9 /* YZAnalyticsConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 47359BAB1C70CA5600CB08F9 /* YZAnalyticsConnection.m */; };
-		47359BBD1C70CA5600CB08F9 /* YZAnalyticsConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 47359BAB1C70CA5600CB08F9 /* YZAnalyticsConnection.m */; };
-		47359BBE1C70CA5600CB08F9 /* YZAnalyticsConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 47359BAB1C70CA5600CB08F9 /* YZAnalyticsConnection.m */; };
-		47359BBF1C70CA5600CB08F9 /* YZAnalyticsEventMO.h in Headers */ = {isa = PBXBuildFile; fileRef = 47359BAC1C70CA5600CB08F9 /* YZAnalyticsEventMO.h */; };
-		47359BC01C70CA5600CB08F9 /* YZAnalyticsEventMO.h in Headers */ = {isa = PBXBuildFile; fileRef = 47359BAC1C70CA5600CB08F9 /* YZAnalyticsEventMO.h */; };
-		47359BC11C70CA5600CB08F9 /* YZAnalyticsEventMO.h in Headers */ = {isa = PBXBuildFile; fileRef = 47359BAC1C70CA5600CB08F9 /* YZAnalyticsEventMO.h */; };
-		47359BC21C70CA5600CB08F9 /* YZAnalyticsEventMO.m in Sources */ = {isa = PBXBuildFile; fileRef = 47359BAD1C70CA5600CB08F9 /* YZAnalyticsEventMO.m */; };
-		47359BC31C70CA5600CB08F9 /* YZAnalyticsEventMO.m in Sources */ = {isa = PBXBuildFile; fileRef = 47359BAD1C70CA5600CB08F9 /* YZAnalyticsEventMO.m */; };
-		47359BC41C70CA5600CB08F9 /* YZAnalyticsEventMO.m in Sources */ = {isa = PBXBuildFile; fileRef = 47359BAD1C70CA5600CB08F9 /* YZAnalyticsEventMO.m */; };
-		47359BC51C70CA5600CB08F9 /* YZAnalyticsEventQueue.h in Headers */ = {isa = PBXBuildFile; fileRef = 47359BAE1C70CA5600CB08F9 /* YZAnalyticsEventQueue.h */; };
-		47359BC61C70CA5600CB08F9 /* YZAnalyticsEventQueue.h in Headers */ = {isa = PBXBuildFile; fileRef = 47359BAE1C70CA5600CB08F9 /* YZAnalyticsEventQueue.h */; };
-		47359BC71C70CA5600CB08F9 /* YZAnalyticsEventQueue.h in Headers */ = {isa = PBXBuildFile; fileRef = 47359BAE1C70CA5600CB08F9 /* YZAnalyticsEventQueue.h */; };
-		47359BC81C70CA5600CB08F9 /* YZAnalyticsEventQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 47359BAF1C70CA5600CB08F9 /* YZAnalyticsEventQueue.m */; };
-		47359BC91C70CA5600CB08F9 /* YZAnalyticsEventQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 47359BAF1C70CA5600CB08F9 /* YZAnalyticsEventQueue.m */; };
-		47359BCA1C70CA5600CB08F9 /* YZAnalyticsEventQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 47359BAF1C70CA5600CB08F9 /* YZAnalyticsEventQueue.m */; };
+		3D83A76C1C924CA71035BBF9FFC266CA /* YZAnalyticsConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 187AD9B7A1E553EC133263E1F623A84C /* YZAnalyticsConnection.m */; };
+		47516FC01C7B176900FD6D89 /* NSString+YZEncrypt.h in Headers */ = {isa = PBXBuildFile; fileRef = 47516FBE1C7B176900FD6D89 /* NSString+YZEncrypt.h */; };
+		47516FC11C7B176900FD6D89 /* NSString+YZEncrypt.h in Headers */ = {isa = PBXBuildFile; fileRef = 47516FBE1C7B176900FD6D89 /* NSString+YZEncrypt.h */; };
+		47516FC21C7B176900FD6D89 /* NSString+YZEncrypt.h in Headers */ = {isa = PBXBuildFile; fileRef = 47516FBE1C7B176900FD6D89 /* NSString+YZEncrypt.h */; };
+		47516FC31C7B176900FD6D89 /* NSString+YZEncrypt.m in Sources */ = {isa = PBXBuildFile; fileRef = 47516FBF1C7B176900FD6D89 /* NSString+YZEncrypt.m */; };
+		47516FC41C7B176900FD6D89 /* NSString+YZEncrypt.m in Sources */ = {isa = PBXBuildFile; fileRef = 47516FBF1C7B176900FD6D89 /* NSString+YZEncrypt.m */; };
+		47516FC51C7B176900FD6D89 /* NSString+YZEncrypt.m in Sources */ = {isa = PBXBuildFile; fileRef = 47516FBF1C7B176900FD6D89 /* NSString+YZEncrypt.m */; };
+		47516FC81C7B178500FD6D89 /* NSData+YZEncrypt.h in Headers */ = {isa = PBXBuildFile; fileRef = 47516FC61C7B178500FD6D89 /* NSData+YZEncrypt.h */; };
+		47516FC91C7B178500FD6D89 /* NSData+YZEncrypt.m in Sources */ = {isa = PBXBuildFile; fileRef = 47516FC71C7B178500FD6D89 /* NSData+YZEncrypt.m */; };
+		52D3230CB3058859859E374D0E58C4DA /* YZAnalytics.h in Headers */ = {isa = PBXBuildFile; fileRef = 0E46B8C925C1CA0E6FDE77853A1A9DB3 /* YZAnalytics.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6936795C63B7BAC6584DEB497DFC1D76 /* YZAnalyticsEventMO.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AB9BE8A68057C14B18578FE608905E0 /* YZAnalyticsEventMO.m */; };
 		7197786D34D66EE412EBDE14BF605DB7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
 		885A045A37A691FB846D4C43A5CF0A97 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
+		89AF8EACF68CBE662BCAF09183CAB5B0 /* YZAnalyticsEventMO.h in Headers */ = {isa = PBXBuildFile; fileRef = 7A97348BC6D58D1F3F06443749760A5D /* YZAnalyticsEventMO.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8A079BBF4AC8F80D2B2FF19F1ADDE726 /* YZAnalyticsEventQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 2494C04F053C4A323755106D8D831C62 /* YZAnalyticsEventQueue.m */; };
 		926350DA44BF6356201669D1634BB15D /* Pods-YZAnalytics_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C6D3C94B46CAF675BD12288B84325B95 /* Pods-YZAnalytics_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		96FA017F27F87B3D1DA2703F38E717E3 /* YZAnalytics-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A1BF8A82031F5B39A09D2741FB3CC121 /* YZAnalytics-dummy.m */; };
+		94B7E914A7257AF4CD5B7A1908E6B2FE /* YZAnalytics.m in Sources */ = {isa = PBXBuildFile; fileRef = 974396F8DA9979F24254086778D8FEBA /* YZAnalytics.m */; };
 		A310E93D584DF7BB7DE8DAB12F53F101 /* Pods-YZAnalytics_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 464D1243FF77EBD166391BAF873E9E74 /* Pods-YZAnalytics_Tests-dummy.m */; };
-		B885F99B9DFDEAE94E62EA5933FE9175 /* YZAnalytics-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 16C25B972F9AFF54425A0897D9CA6C12 /* YZAnalytics-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B8D2AE308F876173050F69F4FB36403C /* YZAnalyticsConnection.h in Headers */ = {isa = PBXBuildFile; fileRef = 6A8D580FCC035DD47DABF2E0AB3BBC88 /* YZAnalyticsConnection.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BC248CF4406DB0F5C727F9303270F1CF /* contents in Sources */ = {isa = PBXBuildFile; fileRef = B7F54CEDE041AC28944B57DC9D92C17B /* contents */; };
 		C62237FF5944533763DC41468D999550 /* YZAnalytics.bundle in Resources */ = {isa = PBXBuildFile; fileRef = D2337F639A027298A3C6182F49AA363D /* YZAnalytics.bundle */; };
+		EFB7CA4ADF721245BD724C807994E18D /* YZAnalytics-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 16C25B972F9AFF54425A0897D9CA6C12 /* YZAnalytics-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F5EC21C1EF18F1A5F75DE496C01AEC70 /* YZAnalyticsEventQueue.h in Headers */ = {isa = PBXBuildFile; fileRef = D640A4C775528857B7F80708C7024DAA /* YZAnalyticsEventQueue.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F7B7B5D830AD4393042D30B1C99DA0BB /* Pods-YZAnalytics_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3310D2E0E117D72EC2B8EB648E07E882 /* Pods-YZAnalytics_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
@@ -71,7 +61,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0E46B8C925C1CA0E6FDE77853A1A9DB3 /* YZAnalytics.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = YZAnalytics.h; sourceTree = "<group>"; };
 		16C25B972F9AFF54425A0897D9CA6C12 /* YZAnalytics-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "YZAnalytics-umbrella.h"; sourceTree = "<group>"; };
+		187AD9B7A1E553EC133263E1F623A84C /* YZAnalyticsConnection.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = YZAnalyticsConnection.m; sourceTree = "<group>"; };
+		2494C04F053C4A323755106D8D831C62 /* YZAnalyticsEventQueue.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = YZAnalyticsEventQueue.m; sourceTree = "<group>"; };
 		2815C0D28A760A2F53682FBD13C802CB /* Pods-YZAnalytics_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-YZAnalytics_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		2CF62C0CCBDCD203AD5239610F496397 /* YZAnalytics.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = YZAnalytics.modulemap; sourceTree = "<group>"; };
 		3310D2E0E117D72EC2B8EB648E07E882 /* Pods-YZAnalytics_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-YZAnalytics_Tests-umbrella.h"; sourceTree = "<group>"; };
@@ -82,27 +75,27 @@
 		447D12AF525CD1BBD28A35E4C04C399C /* Pods-YZAnalytics_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-YZAnalytics_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		4601C77623AFBDAC5C7B47B263BF5159 /* YZAnalytics.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = YZAnalytics.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		464D1243FF77EBD166391BAF873E9E74 /* Pods-YZAnalytics_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-YZAnalytics_Tests-dummy.m"; sourceTree = "<group>"; };
-		47359BA71C70CA5600CB08F9 /* analyticslocal.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = analyticslocal.xcdatamodel; sourceTree = "<group>"; };
-		47359BA81C70CA5600CB08F9 /* YZAnalytics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YZAnalytics.h; sourceTree = "<group>"; };
-		47359BA91C70CA5600CB08F9 /* YZAnalytics.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YZAnalytics.m; sourceTree = "<group>"; };
-		47359BAA1C70CA5600CB08F9 /* YZAnalyticsConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YZAnalyticsConnection.h; sourceTree = "<group>"; };
-		47359BAB1C70CA5600CB08F9 /* YZAnalyticsConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YZAnalyticsConnection.m; sourceTree = "<group>"; };
-		47359BAC1C70CA5600CB08F9 /* YZAnalyticsEventMO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YZAnalyticsEventMO.h; sourceTree = "<group>"; };
-		47359BAD1C70CA5600CB08F9 /* YZAnalyticsEventMO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YZAnalyticsEventMO.m; sourceTree = "<group>"; };
-		47359BAE1C70CA5600CB08F9 /* YZAnalyticsEventQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YZAnalyticsEventQueue.h; sourceTree = "<group>"; };
-		47359BAF1C70CA5600CB08F9 /* YZAnalyticsEventQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YZAnalyticsEventQueue.m; sourceTree = "<group>"; };
+		47516FBE1C7B176900FD6D89 /* NSString+YZEncrypt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSString+YZEncrypt.h"; path = "helper/NSString+YZEncrypt.h"; sourceTree = "<group>"; };
+		47516FBF1C7B176900FD6D89 /* NSString+YZEncrypt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSString+YZEncrypt.m"; path = "helper/NSString+YZEncrypt.m"; sourceTree = "<group>"; };
+		47516FC61C7B178500FD6D89 /* NSData+YZEncrypt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSData+YZEncrypt.h"; path = "helper/NSData+YZEncrypt.h"; sourceTree = "<group>"; };
+		47516FC71C7B178500FD6D89 /* NSData+YZEncrypt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSData+YZEncrypt.m"; path = "helper/NSData+YZEncrypt.m"; sourceTree = "<group>"; };
 		5160390DAC6B87E6B978D695FADEA82D /* Pods-YZAnalytics_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-YZAnalytics_Example.release.xcconfig"; sourceTree = "<group>"; };
 		59303435CDC4CF1886A1641BB531DCCC /* YZAnalytics-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "YZAnalytics-prefix.pch"; sourceTree = "<group>"; };
 		6A6CB29A97A9F5225AC22F7880AA30B9 /* Pods-YZAnalytics_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-YZAnalytics_Tests-resources.sh"; sourceTree = "<group>"; };
+		6A8D580FCC035DD47DABF2E0AB3BBC88 /* YZAnalyticsConnection.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = YZAnalyticsConnection.h; sourceTree = "<group>"; };
 		6D6B5D5F15E0EFD32B3DAEFC87184F40 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		77566118955A35E8509E59671F5917B1 /* Pods_YZAnalytics_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YZAnalytics_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7A97348BC6D58D1F3F06443749760A5D /* YZAnalyticsEventMO.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = YZAnalyticsEventMO.h; sourceTree = "<group>"; };
+		7AB9BE8A68057C14B18578FE608905E0 /* YZAnalyticsEventMO.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = YZAnalyticsEventMO.m; sourceTree = "<group>"; };
 		95AEB6A6552E2FA51CCE38EAE5EC9468 /* Pods-YZAnalytics_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-YZAnalytics_Example-frameworks.sh"; sourceTree = "<group>"; };
+		974396F8DA9979F24254086778D8FEBA /* YZAnalytics.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = YZAnalytics.m; sourceTree = "<group>"; };
 		A122C5DAC704E66974FC8174871E3E21 /* Pods-YZAnalytics_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-YZAnalytics_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		A15CD32D7BC20F8D432D44C8B211EAFE /* Pods-YZAnalytics_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-YZAnalytics_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		A1BF8A82031F5B39A09D2741FB3CC121 /* YZAnalytics-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "YZAnalytics-dummy.m"; sourceTree = "<group>"; };
 		A611E248CDCB134AE3632508B46A2946 /* Pods-YZAnalytics_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-YZAnalytics_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		A9CC80B3DE3D9F9A6A302FF308FD6BBE /* Pods-YZAnalytics_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-YZAnalytics_Example.modulemap"; sourceTree = "<group>"; };
 		AD5F8D2687244A02445CA45DE19F1877 /* Pods-YZAnalytics_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-YZAnalytics_Example-resources.sh"; sourceTree = "<group>"; };
+		B7F54CEDE041AC28944B57DC9D92C17B /* contents */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xml; path = contents; sourceTree = "<group>"; };
 		B8DF5625D59DD397FE8C45F3E11C910E /* Pods-YZAnalytics_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-YZAnalytics_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		B9C7532FFA7510FE69182CD6B22025E6 /* Pods-YZAnalytics_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-YZAnalytics_Tests-frameworks.sh"; sourceTree = "<group>"; };
 		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
@@ -110,6 +103,7 @@
 		C25CFB108218DC1FA85D2D184057D8BA /* Pods_YZAnalytics_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YZAnalytics_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6D3C94B46CAF675BD12288B84325B95 /* Pods-YZAnalytics_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-YZAnalytics_Example-umbrella.h"; sourceTree = "<group>"; };
 		D2337F639A027298A3C6182F49AA363D /* YZAnalytics.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YZAnalytics.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		D640A4C775528857B7F80708C7024DAA /* YZAnalyticsEventQueue.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = YZAnalyticsEventQueue.h; sourceTree = "<group>"; };
 		E6C27FBD6ED0A253E83DA730DC3F7EB3 /* Pods-YZAnalytics_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-YZAnalytics_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		F2377734509915BCF639489847F1FDE7 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -198,11 +192,30 @@
 		385A1DD64836EBDEE49717A08B6BAA06 /* YZAnalytics */ = {
 			isa = PBXGroup;
 			children = (
-				B420379DAB1F1F3432AC7A5CDF22C23F /* Pod */,
+				840F712EFA9BA358901507991AAB401A /* Pod */,
 				BC695CCDD00F08DC0012BF6769042D91 /* Support Files */,
 			);
 			name = YZAnalytics;
 			path = ../..;
+			sourceTree = "<group>";
+		};
+		47516FB51C7B16D700FD6D89 /* helper */ = {
+			isa = PBXGroup;
+			children = (
+				47516FC61C7B178500FD6D89 /* NSData+YZEncrypt.h */,
+				47516FC71C7B178500FD6D89 /* NSData+YZEncrypt.m */,
+				47516FBE1C7B176900FD6D89 /* NSString+YZEncrypt.h */,
+				47516FBF1C7B176900FD6D89 /* NSString+YZEncrypt.m */,
+			);
+			name = helper;
+			sourceTree = "<group>";
+		};
+		76E0166B9B69E9BA83C8AA872ED41D13 /* analyticslocal.xcdatamodeld */ = {
+			isa = PBXGroup;
+			children = (
+				D4EDB17E57E18AE5FC7F42E03E721CBE /* analyticslocal.xcdatamodel */,
+			);
+			path = analyticslocal.xcdatamodeld;
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
@@ -216,26 +229,10 @@
 			);
 			sourceTree = "<group>";
 		};
-		B27EE7AC4D7ED35597B15C106FEFB95A /* Classes */ = {
+		840F712EFA9BA358901507991AAB401A /* Pod */ = {
 			isa = PBXGroup;
 			children = (
-				47359BA61C70CA5600CB08F9 /* analyticslocal.xcdatamodeld */,
-				47359BA81C70CA5600CB08F9 /* YZAnalytics.h */,
-				47359BA91C70CA5600CB08F9 /* YZAnalytics.m */,
-				47359BAA1C70CA5600CB08F9 /* YZAnalyticsConnection.h */,
-				47359BAB1C70CA5600CB08F9 /* YZAnalyticsConnection.m */,
-				47359BAC1C70CA5600CB08F9 /* YZAnalyticsEventMO.h */,
-				47359BAD1C70CA5600CB08F9 /* YZAnalyticsEventMO.m */,
-				47359BAE1C70CA5600CB08F9 /* YZAnalyticsEventQueue.h */,
-				47359BAF1C70CA5600CB08F9 /* YZAnalyticsEventQueue.m */,
-			);
-			path = Classes;
-			sourceTree = "<group>";
-		};
-		B420379DAB1F1F3432AC7A5CDF22C23F /* Pod */ = {
-			isa = PBXGroup;
-			children = (
-				B27EE7AC4D7ED35597B15C106FEFB95A /* Classes */,
+				D18129CF9E20D813747244154A8F8B35 /* Classes */,
 			);
 			path = Pod;
 			sourceTree = "<group>";
@@ -270,6 +267,31 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
+		D18129CF9E20D813747244154A8F8B35 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				47516FB51C7B16D700FD6D89 /* helper */,
+				0E46B8C925C1CA0E6FDE77853A1A9DB3 /* YZAnalytics.h */,
+				974396F8DA9979F24254086778D8FEBA /* YZAnalytics.m */,
+				6A8D580FCC035DD47DABF2E0AB3BBC88 /* YZAnalyticsConnection.h */,
+				187AD9B7A1E553EC133263E1F623A84C /* YZAnalyticsConnection.m */,
+				7A97348BC6D58D1F3F06443749760A5D /* YZAnalyticsEventMO.h */,
+				7AB9BE8A68057C14B18578FE608905E0 /* YZAnalyticsEventMO.m */,
+				D640A4C775528857B7F80708C7024DAA /* YZAnalyticsEventQueue.h */,
+				2494C04F053C4A323755106D8D831C62 /* YZAnalyticsEventQueue.m */,
+				76E0166B9B69E9BA83C8AA872ED41D13 /* analyticslocal.xcdatamodeld */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		D4EDB17E57E18AE5FC7F42E03E721CBE /* analyticslocal.xcdatamodel */ = {
+			isa = PBXGroup;
+			children = (
+				B7F54CEDE041AC28944B57DC9D92C17B /* contents */,
+			);
+			path = analyticslocal.xcdatamodel;
+			sourceTree = "<group>";
+		};
 		F35CF74C45950B639855F04975245DD1 /* Pods-YZAnalytics_Tests */ = {
 			isa = PBXGroup;
 			children = (
@@ -291,15 +313,17 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		6CD7BB4D2EF5C799750058918408C484 /* Headers */ = {
+		8DE3B1E136E483A300E503674E21121D /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				47359BB51C70CA5600CB08F9 /* YZAnalytics.h in Headers */,
-				B885F99B9DFDEAE94E62EA5933FE9175 /* YZAnalytics-umbrella.h in Headers */,
-				47359BC71C70CA5600CB08F9 /* YZAnalyticsEventQueue.h in Headers */,
-				47359BBB1C70CA5600CB08F9 /* YZAnalyticsConnection.h in Headers */,
-				47359BC11C70CA5600CB08F9 /* YZAnalyticsEventMO.h in Headers */,
+				EFB7CA4ADF721245BD724C807994E18D /* YZAnalytics-umbrella.h in Headers */,
+				47516FC21C7B176900FD6D89 /* NSString+YZEncrypt.h in Headers */,
+				52D3230CB3058859859E374D0E58C4DA /* YZAnalytics.h in Headers */,
+				B8D2AE308F876173050F69F4FB36403C /* YZAnalyticsConnection.h in Headers */,
+				89AF8EACF68CBE662BCAF09183CAB5B0 /* YZAnalyticsEventMO.h in Headers */,
+				47516FC81C7B178500FD6D89 /* NSData+YZEncrypt.h in Headers */,
+				F5EC21C1EF18F1A5F75DE496C01AEC70 /* YZAnalyticsEventQueue.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -307,11 +331,8 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				47359BB41C70CA5600CB08F9 /* YZAnalytics.h in Headers */,
 				F7B7B5D830AD4393042D30B1C99DA0BB /* Pods-YZAnalytics_Tests-umbrella.h in Headers */,
-				47359BC61C70CA5600CB08F9 /* YZAnalyticsEventQueue.h in Headers */,
-				47359BBA1C70CA5600CB08F9 /* YZAnalyticsConnection.h in Headers */,
-				47359BC01C70CA5600CB08F9 /* YZAnalyticsEventMO.h in Headers */,
+				47516FC11C7B176900FD6D89 /* NSString+YZEncrypt.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -319,11 +340,8 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				47359BB31C70CA5600CB08F9 /* YZAnalytics.h in Headers */,
 				926350DA44BF6356201669D1634BB15D /* Pods-YZAnalytics_Example-umbrella.h in Headers */,
-				47359BC51C70CA5600CB08F9 /* YZAnalyticsEventQueue.h in Headers */,
-				47359BB91C70CA5600CB08F9 /* YZAnalyticsConnection.h in Headers */,
-				47359BBF1C70CA5600CB08F9 /* YZAnalyticsEventMO.h in Headers */,
+				47516FC01C7B176900FD6D89 /* NSString+YZEncrypt.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -387,10 +405,10 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 143A52802CEE39D54F1065FD943ABDDB /* Build configuration list for PBXNativeTarget "YZAnalytics" */;
 			buildPhases = (
-				7CD32B6A5ED67BD83C933DB6B5834881 /* Sources */,
+				A076572CBDEEAB416B9D37D60E044031 /* Sources */,
 				FDC5162AE14F5C8B35D2439797E8A7C6 /* Frameworks */,
 				322C1EA9556EFCF455E8D50B4C0AF4A2 /* Resources */,
-				6CD7BB4D2EF5C799750058918408C484 /* Headers */,
+				8DE3B1E136E483A300E503674E21121D /* Headers */,
 			);
 			buildRules = (
 			);
@@ -461,25 +479,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				47359BB11C70CA5600CB08F9 /* analyticslocal.xcdatamodeld in Sources */,
-				47359BBD1C70CA5600CB08F9 /* YZAnalyticsConnection.m in Sources */,
-				47359BC31C70CA5600CB08F9 /* YZAnalyticsEventMO.m in Sources */,
-				47359BB71C70CA5600CB08F9 /* YZAnalytics.m in Sources */,
-				47359BC91C70CA5600CB08F9 /* YZAnalyticsEventQueue.m in Sources */,
+				47516FC41C7B176900FD6D89 /* NSString+YZEncrypt.m in Sources */,
 				A310E93D584DF7BB7DE8DAB12F53F101 /* Pods-YZAnalytics_Tests-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7CD32B6A5ED67BD83C933DB6B5834881 /* Sources */ = {
+		A076572CBDEEAB416B9D37D60E044031 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				47359BB21C70CA5600CB08F9 /* analyticslocal.xcdatamodeld in Sources */,
-				47359BBE1C70CA5600CB08F9 /* YZAnalyticsConnection.m in Sources */,
-				47359BC41C70CA5600CB08F9 /* YZAnalyticsEventMO.m in Sources */,
-				47359BB81C70CA5600CB08F9 /* YZAnalytics.m in Sources */,
-				47359BCA1C70CA5600CB08F9 /* YZAnalyticsEventQueue.m in Sources */,
-				96FA017F27F87B3D1DA2703F38E717E3 /* YZAnalytics-dummy.m in Sources */,
+				BC248CF4406DB0F5C727F9303270F1CF /* contents in Sources */,
+				47516FC51C7B176900FD6D89 /* NSString+YZEncrypt.m in Sources */,
+				04BCF0DEE0E420D508491922852985F1 /* YZAnalytics-dummy.m in Sources */,
+				94B7E914A7257AF4CD5B7A1908E6B2FE /* YZAnalytics.m in Sources */,
+				3D83A76C1C924CA71035BBF9FFC266CA /* YZAnalyticsConnection.m in Sources */,
+				6936795C63B7BAC6584DEB497DFC1D76 /* YZAnalyticsEventMO.m in Sources */,
+				8A079BBF4AC8F80D2B2FF19F1ADDE726 /* YZAnalyticsEventQueue.m in Sources */,
+				47516FC91C7B178500FD6D89 /* NSData+YZEncrypt.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -487,11 +503,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				47359BB01C70CA5600CB08F9 /* analyticslocal.xcdatamodeld in Sources */,
-				47359BBC1C70CA5600CB08F9 /* YZAnalyticsConnection.m in Sources */,
-				47359BC21C70CA5600CB08F9 /* YZAnalyticsEventMO.m in Sources */,
-				47359BB61C70CA5600CB08F9 /* YZAnalytics.m in Sources */,
-				47359BC81C70CA5600CB08F9 /* YZAnalyticsEventQueue.m in Sources */,
+				47516FC31C7B176900FD6D89 /* NSString+YZEncrypt.m in Sources */,
 				39A26D36E794BAF5AC5D45B053B92B28 /* Pods-YZAnalytics_Example-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -840,19 +852,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		47359BA61C70CA5600CB08F9 /* analyticslocal.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				47359BA71C70CA5600CB08F9 /* analyticslocal.xcdatamodel */,
-			);
-			currentVersion = 47359BA71C70CA5600CB08F9 /* analyticslocal.xcdatamodel */;
-			path = analyticslocal.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 }

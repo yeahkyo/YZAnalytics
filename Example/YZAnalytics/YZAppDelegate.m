@@ -7,12 +7,17 @@
 //
 
 #import "YZAppDelegate.h"
+#import <YZAnalytics/YZAnalytics.h>
 
 @implementation YZAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    
+    [[YZAnalytics sharedInstance] configureServer:@"http://192.168.10.14:9292"];
+    [[YZAnalytics sharedInstance] configureApiPattern:@"huhu/events"];
+    [[YZAnalytics sharedInstance] configureAutoUploadInterval:10];
     return YES;
 }
 

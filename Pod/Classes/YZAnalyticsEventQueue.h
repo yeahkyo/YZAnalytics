@@ -13,6 +13,8 @@
     YZAnalytics just use this to manage events object.
  */
 
+@class YZAnalyticsEventMO;
+
 @interface YZAnalyticsEventQueue : NSObject
 
 /**
@@ -28,6 +30,8 @@
  * @param parameters
  */
 - (void)addEventWithName:(NSString *)name count:(NSUInteger)count parameters:(NSDictionary *)parameters;
+
+- (void)deleteEvents:(NSArray<YZAnalyticsEventMO *> *)events;
 
 /**
  * Get events in queue

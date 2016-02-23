@@ -17,7 +17,7 @@
 #define DEFAULT_API                                              @"events"
 
 #pragma mark - YZAnalytics
-@interface YZAnalytics()
+@interface YZAnalytics()<YZAnalyticsConnectionDelegate>
 
 @property (nonatomic, strong) YZAnalyticsConnection *connection;
 @property (nonatomic, strong) YZAnalyticsEventQueue *eventQueue;
@@ -82,8 +82,15 @@
 }
 
 - (void)onTimer {
-    NSLog(@"%lu", (unsigned long)[self.eventQueue events].count);
-//    [self.connection uploadData:[self.eventQueue events]];
+    NSArray *storedEvents = [self.eventQueue events];
+    if (storedEvents.count > 0) {
+        [self.connection batchUpload:[self.eventQueue events]];
+    }
+}
+
+#pragma mark -- YZAnalyticsConnectionDelegate
+- (void)connection:(YZAnalyticsConnection *)connection eventsUploadSucceed:(NSArray *)events {
+    [self.eventQueue deleteEvents:events];
 }
 
 #pragma mark -- lazy load
@@ -99,6 +106,7 @@
     if (!_connection) {
         _connection = [[YZAnalyticsConnection alloc] init];
         _connection.apiPattern = DEFAULT_API;
+        _connection.delegate = self;
     }
     
     return _connection;

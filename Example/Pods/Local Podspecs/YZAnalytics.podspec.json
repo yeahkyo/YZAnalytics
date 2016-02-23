@@ -1,16 +1,16 @@
 {
   "name": "YZAnalytics",
-  "version": "0.1.0",
-  "summary": "A short description of YZAnalytics.",
-  "description": "",
-  "homepage": "https://github.com/<GITHUB_USERNAME>/YZAnalytics",
+  "version": "0.1.1",
+  "summary": "Client-side analytics tool.",
+  "description": "* Think: What does it do? Why did you write it? What is the focus?\n* Try to keep it short, snappy and to the point.\n* Write the description between the DESC delimiters below.\n* Finally, don't worry about the indent, CocoaPods strips it!",
+  "homepage": "https://github.com/yeahkyo/YZAnalytics",
   "license": "MIT",
   "authors": {
-    "Yeah": "yeahkyo@163.com"
+    "Yeah": "zyeah61@gmail.com"
   },
   "source": {
-    "git": "https://github.com/<GITHUB_USERNAME>/YZAnalytics.git",
-    "tag": "0.1.0"
+    "git": "https://github.com/yeahkyo/YZAnalytics.git",
+    "tag": "0.1.1"
   },
   "platforms": {
     "ios": "7.0"
@@ -21,5 +21,6 @@
     "YZAnalytics": [
       "Pod/Assets/*.png"
     ]
-  }
+  },
+  "public_header_files": "Pod/Classes/**/*.h"
 }

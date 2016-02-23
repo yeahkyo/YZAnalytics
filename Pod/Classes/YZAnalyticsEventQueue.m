@@ -10,6 +10,13 @@
 #import "YZAnalyticsEventMO.h"
 #import <CoreData/CoreData.h>
 
+#define DB_FILE_FOLDER @"Application Support"
+#define DB_FILE_NAME @"yzanalytics.sqlite"
+
+#define Event_Table_Name @"Event"
+
+#define DATA_MODEL_NAME @"analyticslocal"
+
 @interface YZAnalyticsEventQueue()
 
 @property (nonatomic, strong) NSManagedObjectContext *managedObjectContext;
@@ -31,7 +38,7 @@
 }
 
 - (void)addEventWithName:(NSString *)name count:(NSUInteger)count parameters:(NSDictionary *)parameters {
-    YZAnalyticsEventMO *event =[NSEntityDescription insertNewObjectForEntityForName:@"Event" inManagedObjectContext:self.managedObjectContext];
+    YZAnalyticsEventMO *event = [NSEntityDescription insertNewObjectForEntityForName:Event_Table_Name inManagedObjectContext:self.managedObjectContext];
     
     event.name = name;
     event.count = count;
@@ -39,7 +46,7 @@
     NSString *paramsString = nil;
     if (parameters) {
         NSError *error = nil;
-        NSData *jsonData = [NSJSONSerialization dataWithJSONObject:event.parameters options:0 error:&error];
+        NSData *jsonData = [NSJSONSerialization dataWithJSONObject:parameters options:0 error:&error];
         if (!error) {
             paramsString = [[NSString alloc] initWithData:jsonData encoding:NSUTF8StringEncoding];
         }
@@ -50,8 +57,16 @@
     [self saveContext];
 }
 
+- (void)deleteEvents:(NSArray<YZAnalyticsEventMO *> *)events {
+    [events enumerateObjectsUsingBlock:^(YZAnalyticsEventMO *event, NSUInteger idx, BOOL *stop) {
+        [self.managedObjectContext deleteObject:event];
+    }];
+
+    [self saveContext];
+}
+
 - (NSArray *)events {
-    NSFetchRequest *request = [[NSFetchRequest alloc] initWithEntityName:@"Event"];
+    NSFetchRequest *request = [[NSFetchRequest alloc] initWithEntityName:Event_Table_Name];
     __block NSArray *result;
     [self.managedObjectContext performBlockAndWait:^{
         result = [self.managedObjectContext executeFetchRequest:request error:nil];
@@ -79,7 +94,7 @@
 
 - (NSManagedObjectModel *)managedObjectModel {
     if (!_managedObjectModel) {
-        NSURL *modelURL = [[NSBundle bundleForClass:[YZAnalyticsEventQueue class]] URLForResource:@"analyticslocal" withExtension:@"momd"];
+        NSURL *modelURL = [[NSBundle bundleForClass:[YZAnalyticsEventQueue class]] URLForResource:DATA_MODEL_NAME withExtension:@"momd"];
         _managedObjectModel = [[NSManagedObjectModel alloc] initWithContentsOfURL:modelURL];
     }
     
@@ -91,7 +106,7 @@
         _persistentStoreCoordinator = [[NSPersistentStoreCoordinator alloc] initWithManagedObjectModel:[self managedObjectModel]];
         
         NSFileManager *fileManager = [NSFileManager defaultManager];
-        NSURL *appSuportURL = [[[fileManager URLsForDirectory:NSLibraryDirectory inDomains:NSUserDomainMask] lastObject] URLByAppendingPathComponent:@"Application Support"];
+        NSURL *appSuportURL = [[[fileManager URLsForDirectory:NSLibraryDirectory inDomains:NSUserDomainMask] lastObject] URLByAppendingPathComponent:DB_FILE_FOLDER];
         
         BOOL isDirectory;
         NSError *error = nil;
@@ -100,7 +115,7 @@
             [fileManager createDirectoryAtURL:appSuportURL withIntermediateDirectories:YES attributes:nil error:&error];
         }
         if (!error) {
-            storeURL = [appSuportURL URLByAppendingPathComponent:@"yzanalytics.sqlite"];
+            storeURL = [appSuportURL URLByAppendingPathComponent:DB_FILE_NAME];
             
             // should be excuted asynchronized
             [_persistentStoreCoordinator addPersistentStoreWithType:NSSQLiteStoreType configuration:nil URL:storeURL options:nil error:&error];

@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "YZAnalytics"
-  s.version          = "0.1.0"
+  s.version          = "0.1.1"
   s.summary          = "Client-side analytics tool."
 
 # This description is used to generate tags and improve search results.
@@ -38,5 +38,5 @@ Pod::Spec.new do |s|
     'YZAnalytics' => ['Pod/Assets/*.png']
   }
 
-  # s.public_header_files = 'Pod/Classes/**/*.h'
+  s.public_header_files = 'Pod/Classes/**/*.h'
 end
