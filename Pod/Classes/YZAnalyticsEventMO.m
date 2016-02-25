@@ -14,4 +14,10 @@
 @dynamic count;
 @dynamic parameters;
 
+@dynamic appVersion;
+@dynamic userID;
+@dynamic collectedAt;
+
+@dynamic deviceExt;
+
 @end

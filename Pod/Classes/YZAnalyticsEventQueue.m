@@ -17,11 +17,15 @@
 
 #define DATA_MODEL_NAME @"analyticslocal"
 
+#define DEFAULT_GUEST_NAME @"guest"
+
 @interface YZAnalyticsEventQueue()
 
 @property (nonatomic, strong) NSManagedObjectContext *managedObjectContext;
 @property (nonatomic, strong) NSManagedObjectModel *managedObjectModel;
 @property (nonatomic, strong) NSPersistentStoreCoordinator *persistentStoreCoordinator;
+
+@property (nonatomic, copy) NSString *deviceExtJson;
 
 @end
 
@@ -41,7 +45,14 @@
     YZAnalyticsEventMO *event = [NSEntityDescription insertNewObjectForEntityForName:Event_Table_Name inManagedObjectContext:self.managedObjectContext];
     
     event.name = name;
-    event.count = count;
+    event.count = [NSNumber numberWithUnsignedInteger:count];
+    event.appVersion = self.appVersion;
+    if (self.userID) {
+        event.userID = self.userID;
+    } else {
+        event.userID = DEFAULT_GUEST_NAME;
+    }
+    event.collectedAt = [self currentTimeString];
     
     NSString *paramsString = nil;
     if (parameters) {
@@ -83,6 +94,28 @@
     }];
 }
 
+- (void)setDeviceExt:(NSDictionary *)deviceExt {
+    NSError *error = nil;
+    NSData *jsonData = [NSJSONSerialization dataWithJSONObject:deviceExt options:0 error:&error];
+    if (!error) {
+        self.deviceExtJson = [[NSString alloc] initWithData:jsonData encoding:NSUTF8StringEncoding];
+    } else {
+        self.deviceExtJson = @"No Device Info";
+    }
+}
+
+#pragma mark - 
+- (NSString *)currentTimeString {
+    NSDate *now = [NSDate date];
+    NSDateFormatter* dateFormatter = [[NSDateFormatter alloc] init];
+    [dateFormatter setDateFormat:@"yyyy-MM-dd HH:mm:ss"];
+    [dateFormatter setTimeZone:[NSTimeZone systemTimeZone]];
+    NSString *text = [dateFormatter stringFromDate:now];
+    
+    return text;
+}
+
+#pragma mark - CoreData stack
 - (NSManagedObjectContext *)managedObjectContext {
     if (!_managedObjectContext) {
         _managedObjectContext = [[NSManagedObjectContext alloc] initWithConcurrencyType:NSPrivateQueueConcurrencyType];
@@ -125,6 +158,15 @@
     }
     
     return _persistentStoreCoordinator;
+}
+
+#pragma mark - Default App Infos
+- (NSString *)appVersion {
+    if (!_appVersion) {
+        _appVersion = [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleShortVersionString"];
+    }
+    
+    return _appVersion;
 }
 
 @end

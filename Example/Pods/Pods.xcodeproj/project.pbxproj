@@ -19,6 +19,8 @@
 		47516FC51C7B176900FD6D89 /* NSString+YZEncrypt.m in Sources */ = {isa = PBXBuildFile; fileRef = 47516FBF1C7B176900FD6D89 /* NSString+YZEncrypt.m */; };
 		47516FC81C7B178500FD6D89 /* NSData+YZEncrypt.h in Headers */ = {isa = PBXBuildFile; fileRef = 47516FC61C7B178500FD6D89 /* NSData+YZEncrypt.h */; };
 		47516FC91C7B178500FD6D89 /* NSData+YZEncrypt.m in Sources */ = {isa = PBXBuildFile; fileRef = 47516FC71C7B178500FD6D89 /* NSData+YZEncrypt.m */; };
+		475BE8741C7C0DD500AD10DD /* analyticslocal.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 475BE8721C7C0DD500AD10DD /* analyticslocal.xcdatamodeld */; };
+		475BE8751C7C0DD500AD10DD /* analyticslocal.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 475BE8721C7C0DD500AD10DD /* analyticslocal.xcdatamodeld */; };
 		52D3230CB3058859859E374D0E58C4DA /* YZAnalytics.h in Headers */ = {isa = PBXBuildFile; fileRef = 0E46B8C925C1CA0E6FDE77853A1A9DB3 /* YZAnalytics.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6936795C63B7BAC6584DEB497DFC1D76 /* YZAnalyticsEventMO.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AB9BE8A68057C14B18578FE608905E0 /* YZAnalyticsEventMO.m */; };
 		7197786D34D66EE412EBDE14BF605DB7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
@@ -29,7 +31,6 @@
 		94B7E914A7257AF4CD5B7A1908E6B2FE /* YZAnalytics.m in Sources */ = {isa = PBXBuildFile; fileRef = 974396F8DA9979F24254086778D8FEBA /* YZAnalytics.m */; };
 		A310E93D584DF7BB7DE8DAB12F53F101 /* Pods-YZAnalytics_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 464D1243FF77EBD166391BAF873E9E74 /* Pods-YZAnalytics_Tests-dummy.m */; };
 		B8D2AE308F876173050F69F4FB36403C /* YZAnalyticsConnection.h in Headers */ = {isa = PBXBuildFile; fileRef = 6A8D580FCC035DD47DABF2E0AB3BBC88 /* YZAnalyticsConnection.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BC248CF4406DB0F5C727F9303270F1CF /* contents in Sources */ = {isa = PBXBuildFile; fileRef = B7F54CEDE041AC28944B57DC9D92C17B /* contents */; };
 		C62237FF5944533763DC41468D999550 /* YZAnalytics.bundle in Resources */ = {isa = PBXBuildFile; fileRef = D2337F639A027298A3C6182F49AA363D /* YZAnalytics.bundle */; };
 		EFB7CA4ADF721245BD724C807994E18D /* YZAnalytics-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 16C25B972F9AFF54425A0897D9CA6C12 /* YZAnalytics-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F5EC21C1EF18F1A5F75DE496C01AEC70 /* YZAnalyticsEventQueue.h in Headers */ = {isa = PBXBuildFile; fileRef = D640A4C775528857B7F80708C7024DAA /* YZAnalyticsEventQueue.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -79,6 +80,7 @@
 		47516FBF1C7B176900FD6D89 /* NSString+YZEncrypt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSString+YZEncrypt.m"; path = "helper/NSString+YZEncrypt.m"; sourceTree = "<group>"; };
 		47516FC61C7B178500FD6D89 /* NSData+YZEncrypt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSData+YZEncrypt.h"; path = "helper/NSData+YZEncrypt.h"; sourceTree = "<group>"; };
 		47516FC71C7B178500FD6D89 /* NSData+YZEncrypt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSData+YZEncrypt.m"; path = "helper/NSData+YZEncrypt.m"; sourceTree = "<group>"; };
+		475BE8731C7C0DD500AD10DD /* analyticslocal.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = analyticslocal.xcdatamodel; sourceTree = "<group>"; };
 		5160390DAC6B87E6B978D695FADEA82D /* Pods-YZAnalytics_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-YZAnalytics_Example.release.xcconfig"; sourceTree = "<group>"; };
 		59303435CDC4CF1886A1641BB531DCCC /* YZAnalytics-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "YZAnalytics-prefix.pch"; sourceTree = "<group>"; };
 		6A6CB29A97A9F5225AC22F7880AA30B9 /* Pods-YZAnalytics_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-YZAnalytics_Tests-resources.sh"; sourceTree = "<group>"; };
@@ -95,7 +97,6 @@
 		A611E248CDCB134AE3632508B46A2946 /* Pods-YZAnalytics_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-YZAnalytics_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		A9CC80B3DE3D9F9A6A302FF308FD6BBE /* Pods-YZAnalytics_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-YZAnalytics_Example.modulemap"; sourceTree = "<group>"; };
 		AD5F8D2687244A02445CA45DE19F1877 /* Pods-YZAnalytics_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-YZAnalytics_Example-resources.sh"; sourceTree = "<group>"; };
-		B7F54CEDE041AC28944B57DC9D92C17B /* contents */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xml; path = contents; sourceTree = "<group>"; };
 		B8DF5625D59DD397FE8C45F3E11C910E /* Pods-YZAnalytics_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-YZAnalytics_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		B9C7532FFA7510FE69182CD6B22025E6 /* Pods-YZAnalytics_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-YZAnalytics_Tests-frameworks.sh"; sourceTree = "<group>"; };
 		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
@@ -210,14 +211,6 @@
 			name = helper;
 			sourceTree = "<group>";
 		};
-		76E0166B9B69E9BA83C8AA872ED41D13 /* analyticslocal.xcdatamodeld */ = {
-			isa = PBXGroup;
-			children = (
-				D4EDB17E57E18AE5FC7F42E03E721CBE /* analyticslocal.xcdatamodel */,
-			);
-			path = analyticslocal.xcdatamodeld;
-			sourceTree = "<group>";
-		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
@@ -279,17 +272,9 @@
 				7AB9BE8A68057C14B18578FE608905E0 /* YZAnalyticsEventMO.m */,
 				D640A4C775528857B7F80708C7024DAA /* YZAnalyticsEventQueue.h */,
 				2494C04F053C4A323755106D8D831C62 /* YZAnalyticsEventQueue.m */,
-				76E0166B9B69E9BA83C8AA872ED41D13 /* analyticslocal.xcdatamodeld */,
+				475BE8721C7C0DD500AD10DD /* analyticslocal.xcdatamodeld */,
 			);
 			path = Classes;
-			sourceTree = "<group>";
-		};
-		D4EDB17E57E18AE5FC7F42E03E721CBE /* analyticslocal.xcdatamodel */ = {
-			isa = PBXGroup;
-			children = (
-				B7F54CEDE041AC28944B57DC9D92C17B /* contents */,
-			);
-			path = analyticslocal.xcdatamodel;
 			sourceTree = "<group>";
 		};
 		F35CF74C45950B639855F04975245DD1 /* Pods-YZAnalytics_Tests */ = {
@@ -488,13 +473,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BC248CF4406DB0F5C727F9303270F1CF /* contents in Sources */,
 				47516FC51C7B176900FD6D89 /* NSString+YZEncrypt.m in Sources */,
 				04BCF0DEE0E420D508491922852985F1 /* YZAnalytics-dummy.m in Sources */,
 				94B7E914A7257AF4CD5B7A1908E6B2FE /* YZAnalytics.m in Sources */,
 				3D83A76C1C924CA71035BBF9FFC266CA /* YZAnalyticsConnection.m in Sources */,
 				6936795C63B7BAC6584DEB497DFC1D76 /* YZAnalyticsEventMO.m in Sources */,
 				8A079BBF4AC8F80D2B2FF19F1ADDE726 /* YZAnalyticsEventQueue.m in Sources */,
+				475BE8751C7C0DD500AD10DD /* analyticslocal.xcdatamodeld in Sources */,
 				47516FC91C7B178500FD6D89 /* NSData+YZEncrypt.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -503,6 +488,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				475BE8741C7C0DD500AD10DD /* analyticslocal.xcdatamodeld in Sources */,
 				47516FC31C7B176900FD6D89 /* NSString+YZEncrypt.m in Sources */,
 				39A26D36E794BAF5AC5D45B053B92B28 /* Pods-YZAnalytics_Example-dummy.m in Sources */,
 			);
@@ -852,6 +838,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		475BE8721C7C0DD500AD10DD /* analyticslocal.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				475BE8731C7C0DD500AD10DD /* analyticslocal.xcdatamodel */,
+			);
+			currentVersion = 475BE8731C7C0DD500AD10DD /* analyticslocal.xcdatamodel */;
+			path = analyticslocal.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 }

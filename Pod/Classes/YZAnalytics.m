@@ -23,6 +23,8 @@
 @property (nonatomic, strong) YZAnalyticsEventQueue *eventQueue;
 @property (nonatomic, strong) NSTimer *timer;
 
+@property (nonatomic, copy) NSString *appVersion;
+
 @end
 
 @implementation YZAnalytics
@@ -55,6 +57,18 @@
 
 - (void)configureAutoUploadInterval:(NSTimeInterval)interval {
     [self startWithTimeInterval:interval];
+}
+
+- (void)setAppVersion:(NSString *)appVersion {
+    self.eventQueue.appVersion = appVersion;
+}
+
+- (void)setUserID:(NSString *)currentUserID {
+    self.eventQueue.userID = currentUserID;
+}
+
+- (void)setDeviceInfo:(NSDictionary *)deviceInfo {
+    [self.eventQueue setDeviceExt:deviceInfo];
 }
 
 - (void)startWithTimeInterval:(NSTimeInterval)timeInterval {

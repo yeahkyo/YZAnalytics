@@ -40,4 +40,10 @@
  */
 - (NSArray *)events;
 
+- (void)setDeviceExt:(NSDictionary *)deviceExt;
+
+@property (nonatomic, copy) NSString *appVersion;
+
+@property (nonatomic, copy) NSString *userID;
+
 @end

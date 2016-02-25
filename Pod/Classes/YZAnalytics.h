@@ -58,4 +58,22 @@
 //- (void)configureCountQueryString:(NSString *)queryName;
 //- (void)configureParametersQueryString:(NSString *)queryName;
 
+/**
+ App version for all events.
+ 
+ @discussion  if you didn't set appversion pragrammatically, YZAnalytics will use your version
+                          in the specific target info as a default value.
+ */
+- (void)setAppVersion:(NSString *)appVersion;
+
+/**
+ Current user identity.
+ 
+ @discussion  you shall set this value when user login successfully. If there isn't any user logged in,
+                          we will use a default value (maybe 'guest' in this version).
+ */
+- (void)setUserID:(NSString *)currentUserID;
+
+- (void)setDeviceInfo:(NSDictionary *)deviceInfo;
+
 @end
