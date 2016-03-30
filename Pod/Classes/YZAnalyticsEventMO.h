@@ -45,7 +45,7 @@
 /**
     
  */
-@property (nonatomic, copy) NSString *collectedAt;
+@property (nonatomic, copy) NSDate *collectedAt;
 
 @property (nonatomic, copy) NSString  *deviceExt;
 

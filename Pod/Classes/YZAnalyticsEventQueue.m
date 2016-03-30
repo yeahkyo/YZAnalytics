@@ -47,12 +47,17 @@
     event.name = name;
     event.count = [NSNumber numberWithUnsignedInteger:count];
     event.appVersion = self.appVersion;
+    event.collectedAt = [NSDate date];
+    
     if (self.userID) {
         event.userID = self.userID;
     } else {
         event.userID = DEFAULT_GUEST_NAME;
     }
-    event.collectedAt = [self currentTimeString];
+    
+    if (self.deviceExtJson) {
+        event.deviceExt = self.deviceExtJson;
+    }
     
     NSString *paramsString = nil;
     if (parameters) {
@@ -64,6 +69,10 @@
     }
     
     event.parameters = paramsString;
+    
+#ifdef DEBUG
+    NSLog(@"YZAnalytics %@: %@", name, parameters);
+#endif
     
     [self saveContext];
 }
@@ -86,12 +95,20 @@
 }
 
 - (void)saveContext {
-    [self.managedObjectContext performBlock:^{
-        NSError *error = nil;
-        if ([self.managedObjectContext hasChanges] && ![self.managedObjectContext save:&error]) {
-            NSLog(@"Context Save Error: %@, %@", error, [error userInfo]);
-        }
-    }];
+    if (self.managedObjectContext != nil) {
+        [self.managedObjectContext performBlockAndWait:^{
+            NSError *error = nil;
+            if ([self.managedObjectContext hasChanges] && ![self.managedObjectContext save:&error]) {
+#ifdef DEBUG
+                NSLog(@"Context Save Error: %@, %@", error, [error userInfo]);
+#endif
+            }
+            
+            if ([self.managedObjectContext respondsToSelector:@selector(refreshAllObjects)]) {
+                [self.managedObjectContext refreshAllObjects];
+            }
+        }];
+    }
 }
 
 - (void)setDeviceExt:(NSDictionary *)deviceExt {
@@ -102,17 +119,6 @@
     } else {
         self.deviceExtJson = @"No Device Info";
     }
-}
-
-#pragma mark - 
-- (NSString *)currentTimeString {
-    NSDate *now = [NSDate date];
-    NSDateFormatter* dateFormatter = [[NSDateFormatter alloc] init];
-    [dateFormatter setDateFormat:@"yyyy-MM-dd HH:mm:ss"];
-    [dateFormatter setTimeZone:[NSTimeZone systemTimeZone]];
-    NSString *text = [dateFormatter stringFromDate:now];
-    
-    return text;
 }
 
 #pragma mark - CoreData stack

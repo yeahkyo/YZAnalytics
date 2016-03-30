@@ -98,15 +98,20 @@ const static NSString *kBatchEventsFieldName = @"events";
 }
 
 - (void)endUploading {
+    #ifdef DEBUG
+    NSLog(@"YZAnalytics: 上传成功，共上传%lu个事件", (unsigned long)self.eventsQueue.count);
+    #endif
     [self.delegate connection:self eventsUploadSucceed:self.eventsQueue];
     [self.eventsQueue removeAllObjects];
 }
 
 #pragma mark -- NSURLConnectionDelegate
 - (void)connection:(NSURLConnection *)connection didFailWithError:(NSError *)error {
-    NSLog(@"%@", error);
+    #ifdef DEBUG
+    NSLog(@"PNAnalytics: 上传失败 错误-%@", error);
+    #endif
 
-    [self endUploading];
+    [self.eventsQueue removeAllObjects];
 }
 
 #pragma mark -- NSURLConnectionDataDelegate

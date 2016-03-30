@@ -92,19 +92,25 @@
 }
 
 - (void)collectCustomEvent:(NSString *)name count:(NSUInteger)count parameters:(NSDictionary *)parameters {
-    [self.eventQueue addEventWithName:name count:count parameters:parameters];
+    @synchronized(self) {
+        [self.eventQueue addEventWithName:name count:count parameters:parameters];
+    }
 }
 
 - (void)onTimer {
-    NSArray *storedEvents = [self.eventQueue events];
-    if (storedEvents.count > 0) {
-        [self.connection batchUpload:[self.eventQueue events]];
+    @synchronized(self) {
+        NSArray *storedEvents = [self.eventQueue events];
+        if (storedEvents.count > 0) {
+            [self.connection batchUpload:[self.eventQueue events]];
+        }
     }
 }
 
 #pragma mark -- YZAnalyticsConnectionDelegate
 - (void)connection:(YZAnalyticsConnection *)connection eventsUploadSucceed:(NSArray *)events {
-    [self.eventQueue deleteEvents:events];
+    @synchronized(self) {
+        [self.eventQueue deleteEvents:events];
+    }
 }
 
 #pragma mark -- lazy load
